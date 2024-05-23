@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        
+        #navbar {
+            background-color: white;
+            padding: 10px 20px;
+            overflow: hidden;
+            height: 60px; 
+        }
+
+        #logo {
+            float: left;
+            margin-right: 20px;
+            height: 100%;
+        }
+
+        #logo img {
+            height: 100%;
+        }
+
+        .left,
+        .right {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .menu-item,
+        .icon {
+            display: inline-block;
+            margin-left: 20px;
+            line-height: 60px; 
+        }
+
+        .menu-item:first-child,
+        .icon:first-child {
+            margin-left: 0;
+        }
+
+    
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        
+        #main {
+            text-align: center;
+            margin: 20px auto;
+            background-color: rgb(176, 222, 233);
+        }
+
+        .block {
+            width: 150px;
+            height: 150px;
+            border: 2px solid orange;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+            vertical-align: top;
+            position: relative; 
+            background-color: cornsilk;
+        }
+
+        .block h4 {
+            margin-bottom: 5px;
+        }
+
+        .block span {
+            color: orange;
+            background-color: lightpink;
+            padding: 2px 5px;
+            display: inline;
+        }
+
+        .price {
+            font-weight: bold;
+        }
+
+        .deleted-price {
+            text-decoration: line-through;
+        }
+
+        .block img {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .bottom {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav id="navbar" class="clearfix">
+        <div id="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Xiaomi_logo.svg/768px-Xiaomi_logo.svg.png" alt="Logo">
+        </div>
+        <div class="left">
+            <div class="menu-item">Store</div>
+            <div class="menu-item">Phone</div>
+            <div class="menu-item">TV & Smart Home</div>
+            <div class="menu-item">Tablet</div>
+            <div class="menu-item">Lifestyle</div>
+        </div>
+        <div class="right">
+            <div class="menu-item">Discover</div>
+            <div class="menu-item">Support</div>
+            <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="icon"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div class="icon"><i class="fa-solid fa-user"></i></div>
+        </div>
+    </nav>
+    <main id="main">
+        <div class="block">
+            <h4>Redmi12 5G</h4>
+            <span>25% off</span>
+            <div class="bottom">
+                <div>
+                    <div class="price">11,999</div>
+                    <div class="deleted-price">15,999</div>
+                </div>
+            </div>
+            <img src="https://i03.appmifile.com/699_item_in/05/03/2024/1504ac87bf1cf5ce5c9a7014a60fa136.jpg?thumb=1&w=160&f=webp&q=85" alt="Image">
+        </div>
+        <div class="block">
+            <h4>Redmi 13C</h4>
+            <span>35% off</span>
+            <div class="bottom">
+                <div>
+                    <div class="price">7,699</div>
+                    <div class="deleted-price">11,999</div>
+                </div>
+            </div>
+            <img src="https://m.media-amazon.com/images/I/41PlXp6us8L._SX300_SY300_QL70_FMwebp_.jpg" alt="Image">
+        </div>
+        <div class="block">
+            <h4>Redmi12</h4>
+            <span>36% off</span>
+            <div class="bottom">
+                <div>
+                    <div class="price">9,499</div>
+                    <div class="deleted-price">14,999</div>
+                </div>
+            </div>
+            <img src="https://i02.appmifile.com/mi-com-product/fly-birds/redmi-13c/pc-in/995f13718fe9dcc388a35d8d719fbb44.png?f=webp" alt="Image">
+        </div>
+        <div class="block">
+            <h4>Redmi 13C</h4>
+            <span>35% off</span>
+            <div class="bottom">
+                <div>
+                    <div class="price">7,000</div>
+                    <div class="deleted-price">11,999</div>
+                </div>
+            </div>
+            <img src="https://i02.appmifile.com/mi-com-product/fly-birds/redmi-13c/pc-in/995f13718fe9dcc388a35d8d719fbb44.png?f=webp" alt="Image">
+        </div>    </main>
+</body>
+</html>
